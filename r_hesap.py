@@ -1,5 +1,10 @@
 import streamlit as st
-
+hide_menu_style = """
+        <style>
+        #MainMenu {visibility: hidden;}
+        </style>
+        """
+st.markdown(hide_menu_style, unsafe_allow_html=True)
 st.title('Rakı Hesap Makinesi')
 
 day=st.number_input("Damıtılmış Alkol Yüzdesi", step=1,value=96)
